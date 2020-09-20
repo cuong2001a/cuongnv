@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- lang ="en" hỗ trợ tiếng anh-->
+
+<head>
+    <!--Đinh nghĩa và lưu trữ trong html-->
+    <!-- bất kì thẻ html đơn thì cần dùng dấu / để kết thúc lệnh-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hỗ trợ chạy đa nền tàng trên các thiết bị-->
+    <meta name="author" content="Ngô Việt Cường" /> <!-- Tên tác giả-->
+    <meta name="keyword" content="quan jean, ao thun" /><!-- từ khóa để tìm kiếm-->
+    <meta name="description" content="shop quan ao thoi trang" /> <!-- mô tả -->
+    <title>Document2</title>
+    <link rel="icon" href="img/mp3.png" type="image/png" sizes="32" />
+    <!-- lấy icon tiêu đề ++ note: kích thước ảnh khoảng 32x32 hoặc 64x64-->
+    <link rel="stylesheet" href="css/type.css" type="text/css"> <!-- .. dùng để đi ra ngoài thư mục đang chứa nó -->
+
+</head>
+
+<body>
+    <!--HTML văn bản, tiêu đề và định dạng văn bản-->
+    <!-- không lạm dụng định dạng văn bản vào html-->
+    <!-- class và id dùng để định danh cho phần 1 phần tử html 
+        note: giá trị của thuộc tính id là duy nhất
+              giá trị có class có thể tái sử dụng lại-->
+    <h1 class="title" id="ti">Thẻ</h1>
+    <h6>Thẻ</h6>
+    <!-- Trong 1 văn bản html thì luôn duy nhất chỉ có 1 thẻ h1 trong 1 page-->
+    <p> Đây là văn bản</p> <!-- Định nghĩa đoạn văn, văn bản-->
+    <h2> <i>Đây là chữ in nghiêng</i></h2> <!-- thẻ i dùng để nghiêng chữ-->
+    <h2> <em>Đây là chữ nghiêng</em></h2>
+    <p>ax<sup>2</sup>+ H<sub>2</sub>O </p>
+    <p> <b>Live server</b></p>
+    <p> <strong> Manchester United</strong> </p>
+    <p> <mark>Đánh đấu</mark> </p>
+    <!-- HTML về danh sách hiển thị-->
+    <!-- danh sách không có thứ tự là : ul-->
+    <ul>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+    </ul>
+    <!-- Danh sách có thứ tự là : ol-->
+    <ol>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+        <li>123123123</li>
+    </ol>
+    <!-- HTML liên kết-->
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook">go to Facebook</a> <br>
+    <a href="ass1.html"> bàn phím</a>
+    <a href="#title"> sản phẩm</a>
+    <!-- Thẻ bảng biểu dữ liệu-->
+    <table width="50%" border="1" cellspacing="1">
+        <thead>
+            <tr>
+                <th>Thời gian</th>
+                <th colspan="3">Trận đấu</th>
+                <th>Trực tiếp</th>
+                <th>Kênh truyền hình</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="6">VĐQG Italia- vòng 37</th>
+
+            </tr>
+            <tr>
+                <td>30/7</td>
+                <td>Parma</td>
+                <td></td>
+                <td>Atalanta</td>
+                <td></td>
+                <td rowspan="2">FPT play</td>
+
+            </tr>
+            <tr>
+                <td>30/7</td>
+                <td> <mark> Parma </mark></td>
+                <td></td>
+                <td>Atalanta</td>
+                <td></td>
+
+
+            </tr>
+        </tbody>
+        <tfoot>
+
+
+        </tfoot>
+    </table>
+    <!-- Html media-->
+    <img width="150px" src="img/mp3.png" title="đây là ảnh" alt="mp3" />
+    <br />
+    <!-- <audio src="/media/h2.mp3" loop controls></audio> <br> -->
+    <!-- <video src="/media/video1.mp4" controls loop width="350px"></video> -->
+    <!-- HTML youtube-->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/o6Jo2hW6gHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- <canvas style="width: 500px; height: 500px; border: 1px solid red;"></canvas> thẻ đồ họa -->
+    <!-- HTML form-->
+    <!-- action chỉ ra đường dẫn gửi đi
+            method phương thức gửi dữ liệu-->
+    <form action="" method="">
+        <label for="user"> User name</label>
+        <input type="text" id="user" placeholder="Mời bạn nhập tên" />
+        <br>
+        <label for="password"> Password</label>
+        <input type="password" id="password" placeholder="Mời bạn nhập mật khẩu" />
+        <br>
+        <label for=""> Email</label>
+        <input type="se" id="Email" placeholder="Mời bạn nhập Email" />
+        <button type="submit">Submit</button>
+        <label for="gender"> Gender</label>
+        <select name="gender" id="gender">
+            <option value="">--GIới tính--</option>
+            <option value="1">Nam</option>
+            <option value="0" selected>Nữ</option> 
+        </select>
+        <br> <br>
+        <label for="gender">Giới tính</label>
+        <input type="checkbox" value="1" checked> <span>Nam</span>
+        <input type="checkbox" value="0" checked> <span>Nữ</span>
+        <br> <br>
+        <label for="confirm">Xác nhận</label>
+        <input type="radio" name="confirm" id="confirm1"> <span>Yes</span> 
+        <input type="radio" name="confirm" id="confirm2"> <span>No</span> 
+        <button type="button">Button</button> <!-- chỉ tạo ra 1 nút bấm bt-->
+        <!-- khi mà button không có thuộc tính type ở trong form thì sẽ là default là submit
+             khi mà input không có thuộc tính type ở trong form thì sẽ default là text-->
+             <label for="money"></label>
+             <input type="number" id="money">
+             <br> <br>
+             <label for="file">Mời chọn file</label>
+             <input type="file" name="file" id="file">
+    </form>
+    <!-- HTML layout-->
+</body>
+
+</html>
